@@ -1,0 +1,161 @@
+/* .navBar-container{
+background-color: #202A44;
+color: white;
+display: flex;
+justify-content: space-around;
+align-items:center;
+cursor: pointer;
+padding: 30px 250px;
+gap: 4px;
+
+}
+
+
+.navBar-container h2{
+    font-size: 16px;
+}
+
+.navBar-container h1{
+    margin-right: 100px;
+}
+
+.navBar-container h1, .navBar-container h2, .navBar-container button, .searchIcon{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+button{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 20px;
+    color:white;
+    background-color: #35CBF5;
+    border-style: solid;
+
+}
+
+button:hover{
+    color:#35CBF5;
+    background: none;
+    border-color: #35CBF5;
+}
+
+.searchIcon{
+    font-size: 20px;
+    margin-right: 150px;
+}
+
+.searchIcon:hover{
+    color: #35CBF5;
+}
+ */
+ .navBar-container {
+    width: 100%;
+    height: 100px;
+    background-color: #121619;
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .leftSide {
+    flex: 50%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+
+  .leftSide img {
+    width: 70px;
+  }
+
+  .rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navBar-container a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .rightSide svg {
+    font-size: 40px;
+  }
+
+  .navBbar-container #open {
+    padding-left: 0px;
+  }
+
+  .navBar-container #open img {
+    display: none;
+  }
+
+  .navBar-container #close .hiddenLinks {
+    display: none;
+  }
+
+  .navBar-container #close img {
+    display: inherit;
+  }
+
+  .navBar-container #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+  }
+
+  .navBar-container #open a {
+    width: 70px;
+    margin: 5px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .rightSide a {
+      width: 70px;
+    }
+    .leftSide {
+      padding-left: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .rightSide a {
+      display: none;
+    }
+  
+    .rightSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .rightSide button {
+      display: inherit;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }
